@@ -1,24 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Top 10 Youtube Videos</title>
-  <style>#alles {font face:Calibri}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 YT-Videos | Johannes L</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
-<body>
-  <div id="alles">
-    <p><a href="https://johanneslweb.xyz">Alle meine Projekte</a></p>
-    <h1><span text-decoration:underline>Top 10 YouTube Videos</span></h1>
-  </div>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">Johannes L</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="https://johanneslweb.xyz" class="hover:text-purple-600 transition-colors">Home</a>
+                </div>
+                <button class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-  <iframe width="520" height="292,50" src="https://www.youtube.com/embed/XqZsoesa55w">1. Baby Shark Dance by Pinkfong | 16,28 Mrd. Views</iframe><br>
-  <iframe width="520" height="292,50" src="https://www.youtube.com/embed/kJQP7kiw5Fk">2. Despacito by Luis Fonsi | 8,82 Mrd. Views</iframe><br>
-  <iframe width="520" height="292,50" src="https://www.youtube.com/embed/e_04ZrNroTo">3. Wheels on the Bus by Cocomelon | 8,02 Mrd. Views</iframe><br>
-  <iframe width="520" height="292,50" src="https://www.youtube.com/embed/WRVsOCh907o">4. Bath Song by Cocomelon | 7,24 Mrd. Views</iframe><br>
-  <iframe width="520" height="292,50" src="https://www.youtube.com/embed/F4tHL8reNCs">5. Johny Johny Yes Papa by LooLoo Kids | 7,11 Mrd. Views</iframe><br>
-  <iframe width="520" height="292,50" src="https://www.youtube.com/embed/RgKAFK5djSk">6. See you Again by Wiz Khalifa | 6,8 Mrd. Views</iframe><br>
-  <iframe width="520" height="292,50" src="https://www.youtube.com/embed/hq3yfQnllfQ">7. Phonics Song with Two Words by ChuChu | 6,72 Mrd. Views</iframe><br>
-  <iframe width="520" height="292,50" src="https://www.youtube.com/embed/JGwWNGJdvx8">8. Shape of You by Ed Sheeran | 6,57 Mrd. Views</iframe><br>
-  <iframe width="520" height="292,50" src="https://www.youtube.com/embed/9bZkp7q19f0">9. Gangnam Style by Psy | 5,72 Mrd. Views</iframe><br>
-  <iframe width="520" height="292,50" src="https://www.youtube.com/embed/OPf0YbXqDm0">10. Uptown Funk by Mark Ronson | 5,66 Mrd. Views</iframe>
+    <!-- Videos Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Top 10 YouTube Videos of all Time</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto"></div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+              <iframe width="520" height="292,50" src="https://www.youtube.com/embed/XqZsoesa55w"></iframe>
+              <p>1. Baby Shark Dance by Pinkfong | 16,28 Mrd. Views</p><br>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+              <iframe width="520" height="292,50" src="https://www.youtube.com/embed/kJQP7kiw5Fk"></iframe>
+              <p>2. Despacito by Luis Fonsi | 8,82 Mrd. Views</p><br>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+              <iframe width="520" height="292,50" src="https://www.youtube.com/embed/e_04ZrNroTo"></iframe>
+              <p>3. Wheels on the Bus by Cocomelon | 8,02 Mrd. Views</p><br>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+              <iframe width="520" height="292,50" src="https://www.youtube.com/embed/WRVsOCh907o"></iframe>
+              <p>4. Bath Song by Cocomelon | 7,24 Mrd. Views</p><br>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+              <iframe width="520" height="292,50" src="https://www.youtube.com/embed/F4tHL8reNCs"></iframe>
+              <p>5. Johny Johny Yes Papa by LooLoo Kids | 7,11 Mrd. Views</p><br>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+              <iframe width="520" height="292,50" src="https://www.youtube.com/embed/RgKAFK5djSk"></iframe>
+              <p>6. See you Again by Wiz Khalifa | 6,8 Mrd. Views</p><br>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+              <iframe width="520" height="292,50" src="https://www.youtube.com/embed/hq3yfQnllfQ"></iframe>
+              <p>7. Phonics Song with Two Words by ChuChu | 6,72 Mrd. Views</p><br>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+              <iframe width="520" height="292,50" src="https://www.youtube.com/embed/JGwWNGJdvx8"></iframe>
+              <p>8. Shape of You by Ed Sheeran | 6,57 Mrd. Views</p><br>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+              <iframe width="520" height="292,50" src="https://www.youtube.com/embed/9bZkp7q19f0"></iframe>
+              <p>9. Gangnam Style by Psy | 5,72 Mrd. Views</p><br>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+              <iframe width="520" height="292,50" src="https://www.youtube.com/embed/OPf0YbXqDm0"></iframe>
+              <p>10. Uptown Funk by Mark Ronson | 5,66 Mrd. Views</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold gradient-text mb-4">Johannes L</div>
+                    <p class="text-gray-400">Creative Web Developer since 2025</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/johannes6099" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js background
+        VANTA.NET({
+            el: "#vanta-background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x7c3aed,
+            backgroundColor: 0xf9fafb,
+            points: 12.00,
+            maxDistance: 22.00,
+            spacing: 18.00
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
 </body>
 </html>
